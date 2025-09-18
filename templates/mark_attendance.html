@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="card shadow p-4">
+  <h3><i class="fa-solid fa-check-circle"></i> Mark Attendance for {{ section.name }}</h3>
+  <form method="POST" class="mt-3">
+    <div class="form-check">
+      <input class="form-check-input" type="radio" name="status" value="Present" id="present" required>
+      <label class="form-check-label" for="present"><i class="fa-solid fa-circle-check text-success"></i> Present</label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="radio" name="status" value="Absent" id="absent">
+      <label class="form-check-label" for="absent"><i class="fa-solid fa-circle-xmark text-danger"></i> Absent</label>
+    </div>
+    <button type="submit" class="btn btn-success mt-3"><i class="fa-solid fa-paper-plane"></i> Submit</button>
+  </form>
+</div>
+{% endblock %}

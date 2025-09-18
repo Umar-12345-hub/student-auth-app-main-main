@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="text-center">
+  <h1 class="mb-4"><i class="fa-solid fa-house"></i> Welcome to Attendance System</h1>
+  <div class="row">
+    <div class="col-md-6">
+      <div class="card shadow-sm">
+        <div class="card-body">
+          <h3><i class="fa-solid fa-chalkboard-teacher"></i> Lecturers</h3>
+          <a href="{{ url_for('lecturer_register') }}" class="btn btn-outline-primary m-2">
+            <i class="fa-solid fa-user-plus"></i> Register
+          </a>
+          <a href="{{ url_for('lecturer_login') }}" class="btn btn-primary m-2">
+            <i class="fa-solid fa-right-to-bracket"></i> Login
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="card shadow-sm">
+        <div class="card-body">
+          <h3><i class="fa-solid fa-user-graduate"></i> Students</h3>
+          <a href="{{ url_for('student_register') }}" class="btn btn-outline-success m-2">
+            <i class="fa-solid fa-user-plus"></i> Register
+          </a>
+          <a href="{{ url_for('student_login') }}" class="btn btn-success m-2">
+            <i class="fa-solid fa-right-to-bracket"></i> Login
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

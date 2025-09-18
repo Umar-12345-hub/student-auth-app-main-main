@@ -1,3 +1,13 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+
+"""
+program: Flask Attendance App.
+Author: The Programmers
+Description: This module implements a simple attendance management system
+for lecturers and students using Flask. It includes registration,
+login, section creation with QR codes, and attendance marking.
+"""
 from flask import Flask, render_template, request, redirect, url_for, session
 import json, os, qrcode, base64
 from io import BytesIO

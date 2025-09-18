@@ -1,4 +1,12 @@
 # Student Auth & Attendance App
+Group name : The Programmers
+Group members
+1. Samuel Nkansah Aidoo
+2. Kassim Umar
+3. Yahyah sheikh  Abdul Basit
+4. Abdul Wakil Yussif
+5. Mohammed Iddrisu
+
 
 This is a simple Flask app for:
 - Registering students and lecturers
